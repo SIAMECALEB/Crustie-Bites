@@ -1,0 +1,138 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+}
+
+body {
+  background: linear-gradient(to right, #c7039c81, #be05beb9);
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Header */
+.header {
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(141, 7, 107, 0.678);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: 800;
+  color: #ecde16;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+.nav a {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 2px;
+  background-color: #e6f516;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  transform-origin: left;
+}
+
+.nav a:hover {
+  color: #e7d10b;
+}
+
+.nav a:hover::after {
+  transform: scaleX(1);
+}
+
+.nav a.active {
+  color: #e7d10b;
+}
+
+.menu-section {
+  padding: 40px 0;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 32px;
+  color: #f9fd038e;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.menu-item {
+  background: #750152;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(255, 254, 254, 0.945);
+  transition: transform 0.3s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-5px);
+}
+
+.menu-item img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.menu-item h3 {
+  font-size: 20px;
+  color: #f8f5f5;
+  margin-bottom: 10px;
+}
+
+.menu-item p {
+  font-size: 14px;
+  color: #e0dddd;
+  margin-bottom: 10px;
+}
+
+.menu-item span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+
